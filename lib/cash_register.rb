@@ -28,12 +28,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    self.total -= self.last_item
+    self.total -= self.last_item #clears transaction by subtracting last_item from total
   end
 
 end
-
-
-# Hint #3: The void_last_transaction method will remove the last transaction from
-# the total. You'll need to make an additional attribute accessor and keep track
-# of that last transaction amount somehow. In what method of the class are you working with an individual item?
